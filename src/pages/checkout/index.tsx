@@ -124,7 +124,7 @@ const Checkout: NextPage = () => {
               <InputLabel>Quantity</InputLabel>
               <Select
                 disabled={!quantity}
-                value={pickedQuantity?.toString()}
+                value={pickedModule ? pickedQuantity?.toString() : ''}
                 onChange={handleActiveQuantityChange}
                 input={<OutlinedInput label="Quantity" />}
               >
